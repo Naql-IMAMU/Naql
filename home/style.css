@@ -14,19 +14,19 @@ TABLE OF CONTENTS:
 }
 
 :root {
-  --primary-color: rgb(2, 79, 143);
-  --secondary-color: rgb(2, 33, 54);
+  --primary-color: rgb(2, 33, 54);
   --third-color: rgb(34, 144, 237);
+  --secondary-color: rgb(2, 79, 143);
   --nav-height: 80px;
   --contact-us-width: 450px;
 }
 
 .naql-color {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 nav {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   height: var(--nav-height);
   width: 100vw;
   z-index: 1;
@@ -40,7 +40,7 @@ nav {
 
 #nav-logo {
   transform: translate(100%, -30%);
-  font: 700 36px 'Public Sans';
+  font: 600 36px Arial;
 }
 
 
@@ -93,7 +93,7 @@ nav {
   font-size: 32px;
 }
 #intro-get-started {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 5px;
   height: 40px;
   width: 100px;
@@ -141,7 +141,7 @@ nav {
 }
 
 #form-submit {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 #form-submit:hover {
   background-color: var(--third-color);
@@ -151,6 +151,7 @@ nav {
 
 #items {
   position: relative;
+  outline: 2px dashed green;
   height: 300px;
 }
 .item-holder {
@@ -166,7 +167,7 @@ nav {
   border-radius:15px;
   right: 50%;
   transform: translate(50%);
-  box-shadow: -10px -10px 20px 3px rgba(1, 1, 1, 0.1), -5px -10px 20px 2px rgba(1, 1, 1, 0.1) inset;
+  box-shadow: -10px -10px 20px 3px rgba(1, 1, 1, 0.3), -5px -10px 20px 2px rgba(1, 1, 1, 0.3) inset;
 }
 #ticket {
   transform: translate(calc(-50% - 25px));
@@ -176,12 +177,12 @@ nav {
 }
 
 .item-icon {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   height: fit-content;
   width: fit-content;
   border-radius: 15px;
   margin: 20px;
-  box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
+  box-shadow: -10px -10px 20px 3px rgba(1, 1, 1, 0.1), -5px -10px 20px 2px rgba(1, 1, 1, 0.1) inset;
 }
 
 .item-icon img {
@@ -194,7 +195,7 @@ nav {
   width: 50px;
   margin-left: 20px;
   padding-bottom: 40px;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 .item-text {
   color: black;
@@ -203,114 +204,5 @@ nav {
   font: 700 20px 'Public Sans';
 }
 .item-text:hover {
-  color: var(--primary-color);
-}
-
-
-
-#booking {
-  height: 200px;
-  width: 80vw;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  border-radius: 3px;
-  box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
-}
-#booking-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-#booking-left {
-  display: inline-block;
-  height: 100%;
-  width: 27%;
-  border-radius: 3px 0 0 3px;
-  box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
-  background-color: var(--primary-color);
-}
-#booking-left-text {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(10%, -50%);
-  font: 700 36px 'Public Sans';
-}
-
-#booking-center-left {
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 25%;
-  border-radius: 0px 3px 3px 0;
-}
-#booking-center-left-h1 {
-  font: 400 24px 'Public Sans';
   color: var(--secondary-color);
-}
-#booking-center-left-items {
-  padding: 20px;
-}
-.booking-text {
-  color: black;
-  font: 400 16px 'Public Sans';
-}
-
-#booking input {
-  color: black;
-  margin: 5px;
-  padding: 10px;
-  background-color: rgb(237, 237, 237);
-}
-#booking input::placeholder {
-  color: rgb(122, 122, 122);
-}
-
-#booking-center-right {
-  position: absolute;
-  display: inline-block;
-  left: 53%;
-  height: 100%;
-  width: 27%;
-}
-#booking-center-right-items {
-  padding-top: 30px;
-}
-
-#payment-method {
-  padding-top: 20px;
-}
-.card-choice {
-  height: 20px;
-}
-
-
-#booking-right {
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  height: 100%;
-  width: 20%;
-}
-#booking-right-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-#booking-right-container input {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  height: 100px;
-  width: 150px;
-  background-color: var(--primary-color);
-  font: 400 18px 'Public Sans';
-  border-radius: 3px;
-  color: white;
-}
-
-#booking-right-container input:hover {
-  background-color: var(--third-color);
 }
