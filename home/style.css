@@ -8,8 +8,8 @@ TABLE OF CONTENTS:
   margin: 0;
   padding: 0;
   color: white;
-  font-family: Arial;
-  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+    box-sizing: border-box;
   border: 0;
 }
 
@@ -82,7 +82,7 @@ nav {
 
 #intro {
   position: absolute;
-  font: 600 26px Arial;
+  font: 600 26px 'Public Sans';
   top: 50%;
   left: 10%;
 }
@@ -121,7 +121,7 @@ nav {
   position: absolute;
   left: 5%;
   top: 8%;
-  font: 600 24px Arial;
+  font: 600 24px 'Public Sans';
 }
 
 .text-input {
@@ -201,7 +201,7 @@ nav {
   color: black;
   position: absolute;
   text-decoration: none;
-  font: 600 20px Arial;
+  font: 700 20px 'Public Sans';
 }
 .item-text:hover {
   color: var(--secondary-color);
