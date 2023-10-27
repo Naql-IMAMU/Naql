@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naql</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naql</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav naql-color" id="nav-logo"><a class="nav-link" href="">Naql</a></div>
-        <div class="nav" id="nav-list">
-            <ul>
-                <li id="about"><a class="nav-link" href="#">ABOUT US</a></li>
-                <li id="services"><a class="nav-link" href="#">SERVICES</a></li>
-                <li id="ourBus"><a class="nav-link" href="#">OUR BUS</a></li>
-                <li id="pages"><a class="nav-link" href="#">PAGES</a></li>
-            </ul>
+  <nav>
+    <div class="nav naql-color" id="nav-logo"><a class="nav-link" href="">Naql</a></div>
+    <div class="nav" id="nav-list">
+      <ul>
+        <li id="about"><a class="nav-link" href="#">ABOUT US</a></li>
+        <li id="services"><a class="nav-link" href="#">SERVICES</a></li>
+        <li id="ourBus"><a class="nav-link" href="#">OUR BUS</a></li>
+        <li id="pages"><a class="nav-link" href="#">PAGES</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div id="hero">
+      <div id="background-filter">
+        <div id="intro">
+          <span class="naql-color">Naql</span>
+          <span> Bus, </span><br>
+          <span id="intro-transportation"> Transportation </span><br>
+          <span id="intro-imisu"> IMISU </span><br>
+          <input id="intro-get-started" type="button" value="Get Started">
         </div>
-    </nav>
-    <main>
-        <div id="hero">
-            <div id="background-filter">
-                <div id="intro">
-                    <span class="naql-color">Naql</span>
-                    <span> Bus, </span><br>
-                    <span id="intro-transportation"> Transportation </span><br>
-                    <span id="intro-imisu"> IMISU </span><br>
-                    <input id="intro-get-started" type="button" value="Get Started">
-                </div>
-                <div id="contact-us">
-                    <div id="form">
-                        <div id="center">
-                            <p id="contact-us-text">Contact Us</p>
-                            <form id="contact-us-form" action="/">
-                                <input class="text-input" placeholder="First Name" type="text">
-                                <input class="text-input" placeholder="Last Name" type="text">
-                                <input class="text-input" placeholder="Email" type="email">
-                                <input class="text-input" placeholder="Message" type="text">
-                                <input id="form-submit" type="submit" value="Send">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div id="contact-us">
+          <div id="form">
+            <div id="center">
+              <p id="contact-us-text">Contact Us</p>
+              <form id="contact-us-form" action="/">
+                <input class="text-input" placeholder="First Name" type="text">
+                <input class="text-input" placeholder="Last Name" type="text">
+                <input class="text-input" placeholder="Email" type="email">
+                <input class="text-input" placeholder="Message" type="text">
+                <input id="form-submit" type="submit" value="Send">
+              </form>
             </div>
+          </div>
         </div>
-        <div id="items">
-            <div class="item-holder">
-                <div class="item" id="ticket">
-                    <div class="item-icon">
-                        <img src="./content/credit-card.png" alt="">
-                    </div>
-                    <div class="item-text" id="ticket-text">Bus Tickets</div>
-                </div>
-                <div class="item" id="route">
-                    <div class="item-icon">
-                        <img src="./content/question_mark.png" alt="">
-                    </div>
-                    <div class="item-text" id="route-text">
-                        Bus Routes & Stops
-                    </div>
-                </div>
-                <div class="item" id="schedule">
-                    <div class="item-icon">
-                        <img src="./content/link.png" alt="">
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div id="items">
+      <div class="item-holder">
+        <div class="item" id="ticket">
+          <div class="item-icon">
+            <img src="./content/credit-card.png" alt="">
+          </div>
+          <div class="item-text" id="ticket-text">Bus Tickets</div>
         </div>
-    </main>
+        <div class="item" id="route">
+          <div class="item-icon">
+            <img src="./content/question_mark.png" alt="">
+          </div>
+          <div class="item-text" id="route-text">
+            Bus Routes & Stops
+          </div>
+        </div>
+        <div class="item" id="schedule">
+          <div class="item-icon">
+            <img src="./content/link.png" alt="">
+          </div>
+          <div class="item-text" id="schedule">
+            <a href="">Bus Schedule</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
