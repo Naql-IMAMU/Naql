@@ -1,0 +1,196 @@
+/*
+TABLE OF CONTENTS:
+
+1. Root elements & Variables
+2. 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial;
+    box-sizing: border-box;
+    border: 0;
+}
+
+:root {
+    --primary-color: rgb(2, 33, 54);
+    --third-color: rgb(34, 144, 237);
+    --secondary-color: rgb(2, 79, 143);
+    --nav-height: 80px;
+    --contact-us-width: 450px;
+}
+
+.naql-color {
+    color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: var(--nav-height);
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+}
+
+.nav {
+    display: inline-block;
+    padding-top: calc(var(--nav-height) / 2);
+}
+
+#nav-logo {
+    transform: translate(100%, -30%);
+    font: 600 36px Arial;
+}
+
+
+.nav li {
+    display: inline-flex;
+    margin: 0 2vw;
+}
+#nav-list {
+    transform: translate(-25%, -25%);
+    position: absolute;
+    right: 0;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--third-color);
+}
+
+
+#hero {
+    position: relative;
+    height: calc(100vh - var(--nav-height));
+    width: 100vw;
+    background: url("./content/heroImage.jpg") 0 0 no-repeat fixed;
+    background-size: cover;
+    transform: translate(0, -20%);
+}
+
+#background-filter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(39, 62, 84, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#intro {
+    position: absolute;
+    font: 600 26px Arial;
+    top: 50%;
+    left: 10%;
+}
+#intro-transportation {
+    font-size: 32px;
+}
+#intro-imisu {
+    font-size: 32px;
+}
+#intro-get-started {
+    color: var(--secondary-color);
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+#form {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#contact-us {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    height: 300px;
+    border-radius: 5px;
+    width: var(--contact-us-width);
+    background: rgba(109, 125, 144, 0.554);
+}
+
+#contact-us-text {
+    position: absolute;
+    left: 5%;
+    top: 8%;
+    font: 600 24px Arial;
+}
+
+.text-input {
+    color: black;
+    padding-left: 15px;
+}
+#contact-us input {
+    height: 40px;
+    width: calc(var(--contact-us-width) - 50px);
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+}
+#contact-us-form {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+#form-submit {
+    background-color: var(--secondary-color);
+}
+#form-submit:hover {
+    background-color: var(--third-color);
+}
+
+
+
+#items {
+    position: relative;
+    outline: 2px dashed green;
+    height: 300px;
+}
+.item-holder {
+    position: relative;
+    top: -100%;
+}
+.item {
+    position: absolute;
+    color: black;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    right: 50%;
+    transform: translate(50%);
+    box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
+}
+#ticket {
+    transform: translate(calc(-50% - 25px));
+}
+#schedule {
+    transform: translate(calc(150% + 25px));
+}
+
+.item-icon {
+    background-color: var(--secondary-color);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
+}
+
+.item-icon img {
+    height: 50px;
+    margin: 15px;
+    /* transform: scale(0.5); */
+}
+
+#ticket-text {
+    color: black;
+}
