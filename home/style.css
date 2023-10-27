@@ -112,7 +112,7 @@ nav {
   top: 40%;
   right: 15%;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 15px;
   width: var(--contact-us-width);
   background: rgba(109, 125, 144, 0.554);
 }
@@ -164,7 +164,7 @@ nav {
   width: 300px;
   height: 200px;
   background-color: white;
-  border-radius: 5px;
+  border-radius:15px;
   right: 50%;
   transform: translate(50%);
   box-shadow: -10px -10px 20px 3px rgba(1, 1, 1, 0.3), -5px -10px 20px 2px rgba(1, 1, 1, 0.3) inset;
@@ -182,7 +182,7 @@ nav {
   width: fit-content;
   border-radius: 15px;
   margin: 20px;
-  box-shadow: 10px 10px 20px 3px rgba(1, 1, 1, 0.1), 5px 10px 20px 2px rgba(1, 1, 1, 0.1) inset;
+  box-shadow: -10px -10px 20px 3px rgba(1, 1, 1, 0.1), -5px -10px 20px 2px rgba(1, 1, 1, 0.1) inset;
 }
 
 .item-icon img {
@@ -191,6 +191,18 @@ nav {
   /* transform: scale(0.5); */
 }
 
+.item-text-container {
+  width: 50px;
+  margin-left: 20px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid var(--secondary-color);
+}
 .item-text {
   color: black;
+  position: absolute;
+  text-decoration: none;
+  font: 600 20px Arial;
+}
+.item-text:hover {
+  color: var(--secondary-color);
 }
