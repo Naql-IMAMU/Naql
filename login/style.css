@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+:root {
+  --primary-color: rgb(2, 79, 143);
+  --secondary-color: rgb(2, 33, 54);
+  --third-color: rgb(34, 144, 237);
+  --nav-height: 80px;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  height: var(--nav-height);
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+}
+#center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+#logo {
+  height: 50px;
+  transform: translate(0, 25%);
+}
+#naql-text {
+  display: inline;
+  font: 700 32px 'Public Sans';
+  color: var(--primary-color);
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: no-repeat center +100% url("./content/heroImage.jpg");
+  background-size: cover;
+}
+.background-filter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(39, 62, 84, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#form {
+  height: 500px;
+  width: 800px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+#sign-in-text {
+  font: 700 36px 'Public Sans';
+  color: var(--primary-color);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#form-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.text-input {
+  border-radius: 15px;
+  width: 300px;
+  height: 40px;
+  font: 400 18px 'Public Sans';
+  padding: 25px 15px;
+}
+#password-input {
+  margin-top: 20px;
+}
+#support {
+  margin-top: 10px;
+  font: 400 14px 'Public Sans';
+}
+#remember-me {
+  display: inline-block;
+  position: absolute;
+  left: 12%;
+}
+#forgot-password a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  right: 12%;
+}
+#login {
+  background-color: var(--primary-color);
+  font: 400 18px 'Public Sans';
+  color: white;
+  padding: 15px;
+  width: 300px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+#no-account {
+  margin-top: 40px;
+  font: 400 14px 'Public Sans'
+}
+#no-account a {
+  color: var(--third-color)
+}
