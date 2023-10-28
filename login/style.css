@@ -86,8 +86,8 @@ main {
   margin-top: 20px;
 }
 #support {
-  margin-top: 10px;
-  font: 400 14px 'Public Sans';
+  margin-top: 15px;
+  font: 400 13px 'Public Sans';
 }
 #remember-me {
   display: inline-block;
@@ -107,12 +107,13 @@ main {
   padding: 15px;
   width: 300px;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 #no-account {
-  margin-top: 40px;
-  font: 400 14px 'Public Sans'
+  margin-top: 35px;
+  font: 400 14px 'Public Sans';
 }
 #no-account a {
-  color: var(--third-color)
+  color: var(--third-color);
+  text-decoration: none;
 }
